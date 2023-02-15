@@ -30,23 +30,20 @@ const Board = () => {
 
   return (
     <>
-      <header>
-        <Header>
-          <span className="title">TODO</span>
-        </Header>
-      </header>
-      <section className="kanbanListContainer">
-        <KanbanListContainer>
-          <DndProvider backend={HTML5Backend}>
-            <BoardList title={TO_DO}>{cardDataHandler(TO_DO)}</BoardList>
-            <BoardList title={IN_PROGRESS}>
-              {cardDataHandler(IN_PROGRESS)}
-            </BoardList>
-            <BoardList title={DONE}>{cardDataHandler(DONE)}</BoardList>
-            <BoardList title={NOTE}>{cardDataHandler(NOTE)}</BoardList>
-          </DndProvider>
-        </KanbanListContainer>
-      </section>
+      <Header>
+        <span>TODO</span>
+      </Header>
+
+      <KanbanListContainer>
+        <DndProvider backend={HTML5Backend}>
+          <BoardList title={TO_DO}>{cardDataHandler(TO_DO)}</BoardList>
+          <BoardList title={IN_PROGRESS}>
+            {cardDataHandler(IN_PROGRESS)}
+          </BoardList>
+          <BoardList title={DONE}>{cardDataHandler(DONE)}</BoardList>
+          <BoardList title={NOTE}>{cardDataHandler(NOTE)}</BoardList>
+        </DndProvider>
+      </KanbanListContainer>
     </>
   )
 }

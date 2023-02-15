@@ -12,8 +12,8 @@ const BoardList = ({ title, children }: { title: string; children: any }) => {
   })
   return (
     <>
-      <div className="kanbanListWrap" ref={drop}>
-        <div className="kanbanTitle">{title}</div>
+      <div ref={drop}>
+        <div>{title}</div>
         {children}
         {/* <KanbanCreator title={title} /> */}
       </div>
