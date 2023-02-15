@@ -1,1 +1,1 @@
-export { default } from '../components/elements/HomePage/index'
+export { default } from '../components/elements/Board/Board'
