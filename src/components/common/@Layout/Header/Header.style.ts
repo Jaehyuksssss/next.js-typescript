@@ -29,3 +29,8 @@ export const DetailDiv = styled.div`
     width: 320px;
   }
 `
+export const Button = styled.div`
+  display: flex;
+  align-items: center;
+  height: 50px;
+`
